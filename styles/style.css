@@ -1,0 +1,118 @@
+.inter-normal {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.bg-color {
+    background: rgba(17, 17, 17, 1);
+}
+
+.primary-color{
+    color:rgba(255, 255, 255, 1);
+}
+
+.secondary-color{
+    color:rgba(255, 255, 255, 0.5);
+
+}
+/* Nav bar style */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 57px 190px 0 190px;
+
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+    margin-right: 47px;
+    font-size: 1.12rem;
+    font-weight: 400;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: white;
+}
+
+nav h2 {
+    font-weight: 800;
+    font-style: italic;
+    font-size: 2.25rem;
+    color: rgba(230, 83, 60, 1);
+}
+
+.home-btn {
+    background-color: rgba(230, 83, 60, 1);
+    font-weight: 600;
+    border-radius: 46px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 92px;
+    height: 38px;
+    text-align: center;
+}
+
+/* banner style */
+
+.banner-container{
+    display: flex;
+}
+
+.banner-textbox{
+    width: 520px;
+    margin-left: 190px;
+    margin-bottom: 76px;
+    margin-right: 87px;
+}
+
+.banner-title{
+    font-size: 4.87rem;
+    font-weight: 900;
+}
+.btn-container{
+    display: flex;
+    gap: 10px;
+}
+.coloured-btn{
+    background-color: rgba(230, 83, 60, 1);
+    border: none;
+    width: 224px;
+    height: 54px;
+    border-radius: 42px;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.plain-btn{
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-radius: 42px;
+    font-size: 1.125rem;
+    font-weight: 600;
+    width: 224px;
+    height: 54px;
+}
+
+.tutorial-btn{
+    transform: translate(-50%, -120px);
+    background-color: rgba(48, 48, 48, 0.54);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    width: 206px;
+    height: 96px;
+}
+.round{
+    background-color: rgba(230, 83, 60, 1);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.tutorial-btn-content{
+    display: inline;
+}
