@@ -13,14 +13,15 @@ body {
     background: rgba(17, 17, 17, 1);
 }
 
-.primary-color{
-    color:rgba(255, 255, 255, 1);
+.primary-color {
+    color: rgba(255, 255, 255, 1);
 }
 
-.secondary-color{
-    color:rgba(255, 255, 255, 0.5);
+.secondary-color {
+    color: rgba(255, 255, 255, 0.5);
 
 }
+
 /* Nav bar style */
 
 nav {
@@ -44,15 +45,16 @@ nav ul a {
     color: white;
 }
 
-.line{
+.line {
     width: 18px;
     border: 2px solid rgba(255, 255, 255, 1);
     margin-top: 4px;
 }
 
-.nav-lines{
+.nav-lines {
     display: none;
 }
+
 nav h2 {
     font-weight: 800;
     font-style: italic;
@@ -74,34 +76,36 @@ nav h2 {
 
 /* banner style */
 
-.banner-container{
+.banner-container {
     display: flex;
     gap: 87px;
     margin-bottom: 0;
 }
 
-.banner-textbox{
+.banner-textbox {
     width: 520px;
     margin-left: 190px;
     margin-bottom: 76px;
     margin-right: 87px;
 }
 
-.banner-title{
+.banner-title {
     font-size: 4.87rem;
     font-weight: 900;
 }
 
-.banner-font-style{
+.banner-font-style {
     font-family: 'Miama', sans-serif;
     font-size: 4.8rem;
-    line-height: 1px;  
+    line-height: 1px;
 }
-.btn-container{
+
+.btn-container {
     display: flex;
     gap: 10px;
 }
-.coloured-btn{
+
+.coloured-btn {
     background-color: rgba(230, 83, 60, 1);
     border: none;
     width: 224px;
@@ -111,7 +115,7 @@ nav h2 {
     font-weight: 600;
 }
 
-.plain-btn{
+.plain-btn {
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 1);
     border-radius: 42px;
@@ -121,7 +125,7 @@ nav h2 {
     height: 54px;
 }
 
-.tutorial-btn{
+.tutorial-btn {
     /* transform: translate(-50%, -120px); */
     background-color: rgba(48, 48, 48, 0.54);
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -135,27 +139,30 @@ nav h2 {
     position: relative;
     right: 110px;
     bottom: 160px;
-    padding: 0 23px 5px 23px ;
+    padding: 0 23px 5px 23px;
 }
-.round{
+
+.round {
     background-color: rgba(230, 83, 60, 1);
     width: 40px;
     height: 40px;
     border-radius: 50%;
 }
-.content-bold{
+
+.content-bold {
     font-size: 1.5rem;
     font-weight: 900;
-  
-}
-
-.tutorial-text, .Workout-text{
-  color:rgba(239, 237, 232, 0.65);
 
 }
 
-.workout-btn{
-    background-color:rgba(255, 255, 255, 0.1);
+.tutorial-text,
+.Workout-text {
+    color: rgba(239, 237, 232, 0.65);
+
+}
+
+.workout-btn {
+    background-color: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.1);
     /* max-width: 193px; */
     /* height: 98px; */
@@ -167,56 +174,90 @@ nav h2 {
     padding: 0 23px;
 }
 
-.content-bolder{
-    font-size:2.5rem ;
+.content-bolder {
+    font-size: 2.5rem;
     font-weight: 900;
 }
 
 
 /* habit section style */
 
-.habit-text-box{
- text-align: center;
- display: flex;
- flex-direction: column;
- align-items: center;
- justify-content: center;
- margin-top: -200px;
+.habit-text-box {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -200px;
 }
 
-.habit-title{
+.habit-title {
     font-size: 3rem;
 }
-.habit-text{
+
+.habit-text {
     max-width: 671px;
 }
 
-.habit-image{
+.habit-image {
     border-radius: 50%;
 }
 
-.habit-card-container{
+.habit-card-container {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     margin: 0 198px;
 }
 
-.habit-card-subcontainer{
+.habit-card-subcontainer {
     align-items: center;
     text-align: center;
     margin-top: 58px;
 }
 
-.habit-card{
-max-width: 231px;
-align-items: center;
+.habit-card {
+    max-width: 231px;
+    align-items: center;
 }
 
-.card-title{
+.card-title {
     font-size: 1.12rem;
     font-weight: 700;
 }
 
+/* run section style */
+
+.run-sec-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(34, 34, 34);
+    margin: 100px 190px;
+    border-radius: 18px;
+}
+
+.run-sec {
+    margin: 0 0px 40px 54px;
+    width: 443px;
+}
+
+.run-sec-title{
+    font-size: 3rem;
+    font-weight: 900;
+}
+.run-sec button{
+    margin-top: 34px;
+}
+.run-img {
+    width: 366px;
+    margin: auto 32px;
+    object-fit: cover;
+}
+
+.run-img img {
+    border-radius: 18px;
+    width: 100%;
+
+}
 
 
 
@@ -228,47 +269,64 @@ align-items: center;
     nav {
         padding: 20px;
     }
+
     nav ul {
         display: none;
     }
-   
-    .nav-lines{
-        display:flex;
+
+    .nav-lines {
+        display: flex;
         flex-direction: column-reverse;
         align-items: flex-end;
     }
-    .banner-container{
+
+    .banner-container {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    .banner-textbox{
+    .banner-textbox {
         max-width: 353px;
         margin: 0 auto;
     }
 
-    .img-container{
+    .img-container {
         max-width: 353px;
         margin: 0 20px;
     }
 
-    .workout-btn{
+    .workout-btn {
         bottom: 650px;
         left: 190px;
     }
-    .tutorial-btn{
+
+    .tutorial-btn {
         right: 0px;
         bottom: 345px;
     }
+
     .img-container {
         align-items: center;
         margin: 0 auto;
     }
 
-    .habit-card-container{
-        grid-template-columns: repeat(1,1fr);
+    .habit-card-container {
+        grid-template-columns: repeat(1, 1fr);
         justify-content: center;
         align-items: center;
     }
+    .run-sec-container {
+        flex-direction: column;
+        margin: 20px;
+        width: auto;
+    }
+    .run-sec{
+        width: auto;
+    }
+    .run-img{
+        width: 300px;
+        margin: 0 auto;
+    }
+
 }
