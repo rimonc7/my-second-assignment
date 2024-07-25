@@ -2,6 +2,7 @@
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+    font-size: 14px;
 }
 
 body {
@@ -240,13 +241,15 @@ nav h2 {
     width: 443px;
 }
 
-.run-sec-title{
+.run-sec-title {
     font-size: 3rem;
     font-weight: 900;
 }
-.run-sec button{
+
+.run-sec button {
     margin-top: 34px;
 }
+
 .run-img {
     width: 366px;
     margin: auto 32px;
@@ -259,8 +262,82 @@ nav h2 {
 
 }
 
+/* BMI Section style */
 
+.BMI-Content {
+    margin: 0 auto;
+    width: 50%;
+}
 
+.BMI-title {
+    font-size: 3rem;
+}
+
+.table-title {
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 900;
+    margin-top: 52px;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 52px 175px 133px 189px;
+}
+
+table td {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 15px;
+    color: rgba(255, 255, 255, 0.5);
+
+}
+
+table th {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 15px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+}
+
+.calculator-container {
+    display: flex;
+    margin-top: 88px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.calculator-card {
+    max-width: 577px;
+    margin: 38px 189px 52px 0px;
+}
+
+.calculator-card-title {
+    font-size: 1.75rem;
+    font-weight: 900;
+}
+
+.input-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.input {
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 12px 40px 12px 20px;
+    border: none;
+    font-size: 16px;
+    margin: 10px;
+}
+
+.input-container input:nth-of-type(5) {
+    grid-column: 1/-1;
+}
+
+.input-container input:last-child {
+    font-weight: bold;
+    margin-left: 13px;
+    margin-top: 34px;
+}
 
 /* Responsive style */
 
@@ -316,17 +393,53 @@ nav h2 {
         justify-content: center;
         align-items: center;
     }
+
     .run-sec-container {
         flex-direction: column;
         margin: 20px;
         width: auto;
     }
-    .run-sec{
+
+    .run-sec {
         width: auto;
     }
-    .run-img{
+
+    .run-img {
         width: 300px;
-        margin: 0 auto;
+        margin: 30px auto;
     }
 
+    .BMI-Content {
+        margin-left: 10px;
+        width: calc(100% - 10px);
+    }
+
+    .calculator-container {
+        flex-direction: column;
+    }
+
+    .table {
+        margin: 10px;
+    }
+
+    table {
+        margin: 20px 64px 20px 20px;
+    }
+
+    .table-title {
+        text-align: start;
+    }
+
+    .calculator-card {
+        margin: 20px;
+    }
+
+    .calculator-card {
+        width: 354px;
+    }
+
+    .input-container {
+        padding: none;
+        max-width: 354px;
+    }
 }
