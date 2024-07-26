@@ -306,7 +306,7 @@ table th {
 }
 
 .calculator-card {
-    max-width: 577px;
+    /* max-width: 577px; */
     margin: 38px 189px 52px 0px;
 }
 
@@ -318,6 +318,7 @@ table th {
 .input-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    max-width: 100%;
 }
 
 .input {
@@ -330,7 +331,7 @@ table th {
 }
 
 .input-container input:nth-of-type(5) {
-    grid-column: 1/-1;
+    grid-column: 2 span;
 }
 
 .input-container input:last-child {
@@ -433,13 +434,7 @@ table th {
     .calculator-card {
         margin: 20px;
     }
-
-    .calculator-card {
-        width: 354px;
-    }
-
     .input-container {
-        padding: none;
-        max-width: 354px;
+        display: block;
     }
 }
