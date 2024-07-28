@@ -306,7 +306,7 @@ table th {
 }
 
 .calculator-card {
-    /* max-width: 577px; */
+    max-width: 577px;
     margin: 38px 189px 52px 0px;
 }
 
@@ -338,6 +338,109 @@ table th {
     font-weight: bold;
     margin-left: 13px;
     margin-top: 34px;
+}
+
+/* team style */
+
+.team-content{
+    margin: 88px 384px 58px 384px;
+}
+.team-title{
+    font-size: 3rem;
+    text-align: center;
+}
+.team-text{
+    text-align: center;
+}
+
+.team-image img{
+    width: 326px;
+    height: 272px;
+    border-radius: 18px;
+    object-fit: cover;
+}
+
+.team-image{
+    margin: 20px
+}
+
+.team-image-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 0 190px 60px 190px;
+    border-radius: 18px;
+    padding: 20px;
+}
+
+.team-text-card{
+    position:absolute;
+    transform: translate(0, -90px);
+    margin-left: 10px;
+}
+
+.team-name{
+    font-size: 1.25rem;
+    margin-bottom: 1px;
+}
+
+.team-position{
+    margin-top: 0;
+}
+
+
+
+/* footer style */
+
+footer{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 190px;
+}
+
+.footer-link li{
+    list-style: none;
+}
+.footer-link ul a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-link h4{
+    font-size: 1.2rem;
+}
+.footer-link ul {
+    padding: 0;
+    margin: 0;
+}
+
+.footer-intro{
+    max-width: 443px;
+}
+
+.footer-title{
+    font-size: 4.3rem;
+    font-weight: bolder;
+    font-style: italic;
+    color: rgba(230, 83, 60, 1);
+    margin: 0;
+}
+
+.hr-line{
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    height: 2px;
+    margin: 0 190px;
+}
+
+.footer-credit{
+    text-align: center;
+    margin: 30px auto 0 auto;
+    padding-bottom: 35px;
 }
 
 /* Responsive style */
@@ -418,6 +521,10 @@ table th {
     .calculator-container {
         flex-direction: column;
     }
+    
+    .input-container input:last-child {
+       display: block;
+    }
 
     .table {
         margin: 10px;
@@ -436,5 +543,28 @@ table th {
     }
     .input-container {
         display: block;
+    }
+    .team-content{
+        margin: 42px;
+    }
+
+    .team-image-container{
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0 20px 20px 40px;
+        border-radius: 18px;
+        padding: 20px;
+    }
+
+    .team-image{
+        margin: 20px auto;
+    }
+    .footer-container{
+        flex-direction: column;
+        padding: 0;
+        margin: 20px;
+    }
+
+    .footer-intro{
+        max-width: 317px;
     }
 }
