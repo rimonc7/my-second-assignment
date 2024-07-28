@@ -321,6 +321,21 @@ table th {
     max-width: 100%;
 }
 
+.select {
+    font-size: 16px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 12px 10px 12px 20px;
+    border: none;
+    margin: 10px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.select option {
+    font-weight: normal !important;
+    background-color: rgba(17, 17, 17, 1);
+}
+
 .input {
     border-radius: 8px;
     background-color: rgba(255, 255, 255, 0.1);
@@ -330,7 +345,7 @@ table th {
     margin: 10px;
 }
 
-.input-container input:nth-of-type(5) {
+.act-text {
     grid-column: 2 span;
 }
 
@@ -342,49 +357,51 @@ table th {
 
 /* team style */
 
-.team-content{
+.team-content {
     margin: 88px 384px 58px 384px;
 }
-.team-title{
+
+.team-title {
     font-size: 3rem;
     text-align: center;
 }
-.team-text{
+
+.team-text {
     text-align: center;
 }
 
-.team-image img{
+.team-image img {
     width: 326px;
     height: 272px;
     border-radius: 18px;
     object-fit: cover;
 }
 
-.team-image{
+.team-image {
     margin: 20px
 }
 
-.team-image-container{
+.team-image-container {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     background-color: rgba(255, 255, 255, 0.1);
     margin: 0 190px 60px 190px;
     border-radius: 18px;
     padding: 20px;
 }
 
-.team-text-card{
-    position:absolute;
+.team-text-card {
+    position: absolute;
     transform: translate(0, -90px);
     margin-left: 10px;
 }
 
-.team-name{
+.team-name {
     font-size: 1.25rem;
     margin-bottom: 1px;
 }
 
-.team-position{
+.team-position {
     margin-top: 0;
 }
 
@@ -392,37 +409,39 @@ table th {
 
 /* footer style */
 
-footer{
+footer {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.footer-container{
+.footer-container {
     display: flex;
     justify-content: space-between;
     padding: 70px 190px;
 }
 
-.footer-link li{
+.footer-link li {
     list-style: none;
 }
-.footer-link ul a{
+
+.footer-link ul a {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.5);
 }
 
-.footer-link h4{
+.footer-link h4 {
     font-size: 1.2rem;
 }
+
 .footer-link ul {
     padding: 0;
     margin: 0;
 }
 
-.footer-intro{
+.footer-intro {
     max-width: 443px;
 }
 
-.footer-title{
+.footer-title {
     font-size: 4.3rem;
     font-weight: bolder;
     font-style: italic;
@@ -430,17 +449,56 @@ footer{
     margin: 0;
 }
 
-.hr-line{
+.hr-line {
     background-color: rgba(255, 255, 255, 0.1);
     border: none;
     height: 2px;
     margin: 0 190px;
 }
 
-.footer-credit{
+.footer-credit {
     text-align: center;
     margin: 30px auto 0 auto;
     padding-bottom: 35px;
+}
+
+/* offer style */
+
+.offer-content{
+    text-align: center;
+}
+
+.offer-title{
+ font-size: 2.5rem;
+ margin-bottom: 10px;
+}
+
+.offer-text{
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.offer-container{
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin:20px 190px;
+    border-radius: 18px;
+}
+
+.offer-card{
+    margin: 30px;
+}
+
+.card-title{
+    font-size: 1.5rem;
+}
+
+.offer-image img:hover{
+    transform: scale(1.15);
+    transition: transform 2s;
+
 }
 
 /* Responsive style */
@@ -521,9 +579,9 @@ footer{
     .calculator-container {
         flex-direction: column;
     }
-    
+
     .input-container input:last-child {
-       display: block;
+        display: block;
     }
 
     .table {
@@ -541,14 +599,28 @@ footer{
     .calculator-card {
         margin: 20px;
     }
+
     .input-container {
         display: block;
+
     }
-    .team-content{
+    .input{
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .select {
+        display: block;
+        margin-bottom: 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .team-content {
         margin: 42px;
     }
 
-    .team-image-container{
+    .team-image-container {
         grid-template-columns: repeat(1, 1fr);
         margin: 0 20px 10px 20px;
         border-radius: 18px;
@@ -557,22 +629,41 @@ footer{
         padding: 20px;
     }
 
-    .team-image{
+    .team-image {
         margin: 20px auto;
     }
 
-    .team-image img{
+    .team-image img {
         width: 313px;
         height: 272px;
         object-fit: cover;
     }
-    .footer-container{
+
+    .footer-container {
         flex-direction: column;
         padding: 0;
         margin: 20px;
     }
 
-    .footer-intro{
+    .footer-intro {
         max-width: 317px;
+    }
+    .hr-line{
+        margin: 70px 20px 40px 20px ;
+    }
+
+    .offer-container{
+        flex-direction: column;
+        margin:20px;
+        gap: 10px;
+    }
+
+    .offer-card{
+        margin: 20px;
+    }
+    
+    .offer-image{
+        align-items: center;
+        text-align: center;
     }
 }
