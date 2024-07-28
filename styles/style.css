@@ -558,6 +558,12 @@ footer{
     .team-image{
         margin: 20px auto;
     }
+
+    .team-image img{
+        width: 313px;
+        height: 272px;
+        object-fit: cover;
+    }
     .footer-container{
         flex-direction: column;
         padding: 0;
