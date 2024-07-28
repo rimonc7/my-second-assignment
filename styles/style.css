@@ -552,6 +552,8 @@ footer{
         grid-template-columns: repeat(1, 1fr);
         margin: 0 20px 10px 20px;
         border-radius: 18px;
+        justify-content: center;
+        align-items: center;
         /* padding: 20px; */
     }
 
